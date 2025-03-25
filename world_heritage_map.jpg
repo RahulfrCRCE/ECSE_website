@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cecf30e4c7e694b0ab56555efa53cb9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cecf30e4c7e694b0ab56555efa53cb9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cecf30e4c7e694b0ab56555efa53cb9c = L.map(
+                "map_cecf30e4c7e694b0ab56555efa53cb9c",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aad54d4665936237b8475c41f5094bce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_aad54d4665936237b8475c41f5094bce.addTo(map_cecf30e4c7e694b0ab56555efa53cb9c);
+        
+    
+            var marker_cluster_65696fb6413d279af7ab0d5d291960ea = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_8a9d8db738b60ce4ea39e21165a6f0cf = L.marker(
+                [27.1751, 78.0421],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_0a9fa26418b733f81153efd7e12e3ad2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc15af7999d667166a33100be7034049 = $(`<div id="html_bc15af7999d667166a33100be7034049" style="width: 100.0%; height: 100.0%;"><b>Taj Mahal</b><br>A white marble mausoleum in India.</div>`)[0];
+                popup_0a9fa26418b733f81153efd7e12e3ad2.setContent(html_bc15af7999d667166a33100be7034049);
+            
+        
+
+        marker_8a9d8db738b60ce4ea39e21165a6f0cf.bindPopup(popup_0a9fa26418b733f81153efd7e12e3ad2)
+        ;
+
+        
+    
+    
+            var marker_5642d96ba3626e161cee5cbf5d7af5cd = L.marker(
+                [-13.1631, -72.545],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_78389f46e53b698ef51a2778e7d819e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70586184794d97126a55953b3bb23fde = $(`<div id="html_70586184794d97126a55953b3bb23fde" style="width: 100.0%; height: 100.0%;"><b>Machu Picchu</b><br>An ancient Incan city in Peru.</div>`)[0];
+                popup_78389f46e53b698ef51a2778e7d819e4.setContent(html_70586184794d97126a55953b3bb23fde);
+            
+        
+
+        marker_5642d96ba3626e161cee5cbf5d7af5cd.bindPopup(popup_78389f46e53b698ef51a2778e7d819e4)
+        ;
+
+        
+    
+    
+            var marker_d448b6186920ba8be4ba4b7349b82d8d = L.marker(
+                [40.4319, 116.5704],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_73e4a327b55cec81be1aba6bd095de30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_123b6afc9e53a67ae56b721530585c8a = $(`<div id="html_123b6afc9e53a67ae56b721530585c8a" style="width: 100.0%; height: 100.0%;"><b>Great Wall of China</b><br>A series of fortifications in China.</div>`)[0];
+                popup_73e4a327b55cec81be1aba6bd095de30.setContent(html_123b6afc9e53a67ae56b721530585c8a);
+            
+        
+
+        marker_d448b6186920ba8be4ba4b7349b82d8d.bindPopup(popup_73e4a327b55cec81be1aba6bd095de30)
+        ;
+
+        
+    
+    
+            var marker_8a289a65d79afa2ccbe640df6d94f68a = L.marker(
+                [40.6892, -74.0445],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_41c3505b6adb9d3a8d98535cc1357b12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec52a8d069e10dba80c51d1c7abb8ee0 = $(`<div id="html_ec52a8d069e10dba80c51d1c7abb8ee0" style="width: 100.0%; height: 100.0%;"><b>Statue of Liberty</b><br>A symbol of freedom in the USA.</div>`)[0];
+                popup_41c3505b6adb9d3a8d98535cc1357b12.setContent(html_ec52a8d069e10dba80c51d1c7abb8ee0);
+            
+        
+
+        marker_8a289a65d79afa2ccbe640df6d94f68a.bindPopup(popup_41c3505b6adb9d3a8d98535cc1357b12)
+        ;
+
+        
+    
+    
+            var marker_81d58948835e0090c6502d9c8fc3796f = L.marker(
+                [48.8584, 2.2945],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_22e5165e2b3923a1e5ce439ac28d869a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f059c522ae74cec4515adf832fa9423 = $(`<div id="html_9f059c522ae74cec4515adf832fa9423" style="width: 100.0%; height: 100.0%;"><b>Eiffel Tower</b><br>An iconic iron tower in Paris, France.</div>`)[0];
+                popup_22e5165e2b3923a1e5ce439ac28d869a.setContent(html_9f059c522ae74cec4515adf832fa9423);
+            
+        
+
+        marker_81d58948835e0090c6502d9c8fc3796f.bindPopup(popup_22e5165e2b3923a1e5ce439ac28d869a)
+        ;
+
+        
+    
+    
+            var marker_f0ef9d3f9c0d8996bf3192a80386f119 = L.marker(
+                [-33.8568, 151.2153],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_bf74d61c37052ec59faa94c939c5fa58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0809cb2a0d32626175b19a99eb61be00 = $(`<div id="html_0809cb2a0d32626175b19a99eb61be00" style="width: 100.0%; height: 100.0%;"><b>Sydney Opera House</b><br>A famous performing arts center in Australia.</div>`)[0];
+                popup_bf74d61c37052ec59faa94c939c5fa58.setContent(html_0809cb2a0d32626175b19a99eb61be00);
+            
+        
+
+        marker_f0ef9d3f9c0d8996bf3192a80386f119.bindPopup(popup_bf74d61c37052ec59faa94c939c5fa58)
+        ;
+
+        
+    
+    
+            var marker_5328d11d14e2a1e9ba19aebc79414f53 = L.marker(
+                [41.8902, 12.4922],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_d643a35f8c31d749944faba1d9206fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37ab5b73d11c176e314814355dcab04c = $(`<div id="html_37ab5b73d11c176e314814355dcab04c" style="width: 100.0%; height: 100.0%;"><b>Colosseum</b><br>An ancient amphitheater in Rome, Italy.</div>`)[0];
+                popup_d643a35f8c31d749944faba1d9206fe5.setContent(html_37ab5b73d11c176e314814355dcab04c);
+            
+        
+
+        marker_5328d11d14e2a1e9ba19aebc79414f53.bindPopup(popup_d643a35f8c31d749944faba1d9206fe5)
+        ;
+
+        
+    
+    
+            var marker_c511a785a7ac870f2605a02a5b68266c = L.marker(
+                [29.9792, 31.1342],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_7ab90cb60d2c2f0cc4a0d77fe2f1172d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ab0cc6f27d3dff0234c023216029c69 = $(`<div id="html_1ab0cc6f27d3dff0234c023216029c69" style="width: 100.0%; height: 100.0%;"><b>Pyramids of Giza</b><br>Ancient pyramids in Egypt.</div>`)[0];
+                popup_7ab90cb60d2c2f0cc4a0d77fe2f1172d.setContent(html_1ab0cc6f27d3dff0234c023216029c69);
+            
+        
+
+        marker_c511a785a7ac870f2605a02a5b68266c.bindPopup(popup_7ab90cb60d2c2f0cc4a0d77fe2f1172d)
+        ;
+
+        
+    
+    
+            var marker_a3315f1668a8279a2c36e4cabfe84dea = L.marker(
+                [13.4125, 103.867],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_4dbb84623d2a1d137d64f16deaed6237 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc5b958465562216a3ea91323a142e0 = $(`<div id="html_2dc5b958465562216a3ea91323a142e0" style="width: 100.0%; height: 100.0%;"><b>Angkor Wat</b><br>A massive temple complex in Cambodia.</div>`)[0];
+                popup_4dbb84623d2a1d137d64f16deaed6237.setContent(html_2dc5b958465562216a3ea91323a142e0);
+            
+        
+
+        marker_a3315f1668a8279a2c36e4cabfe84dea.bindPopup(popup_4dbb84623d2a1d137d64f16deaed6237)
+        ;
+
+        
+    
+    
+            var marker_938d613a13955ac94918262d8aaf13d3 = L.marker(
+                [35.3606, 138.7274],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_7c94f61fdad32cebe919353535d51d2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_398d53791d56b1ece87e6da62f58e1f7 = $(`<div id="html_398d53791d56b1ece87e6da62f58e1f7" style="width: 100.0%; height: 100.0%;"><b>Mount Fuji</b><br>A sacred mountain and symbol of Japan.</div>`)[0];
+                popup_7c94f61fdad32cebe919353535d51d2a.setContent(html_398d53791d56b1ece87e6da62f58e1f7);
+            
+        
+
+        marker_938d613a13955ac94918262d8aaf13d3.bindPopup(popup_7c94f61fdad32cebe919353535d51d2a)
+        ;
+
+        
+    
+    
+            var marker_c50ad01f80293ca429f63a3a5da25eab = L.marker(
+                [51.1789, -1.8262],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_aaa998646c47012c9fb188556fcd4c13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad7d4114a76389100004cd9e3641dfdb = $(`<div id="html_ad7d4114a76389100004cd9e3641dfdb" style="width: 100.0%; height: 100.0%;"><b>Stonehenge</b><br>A prehistoric monument in England.</div>`)[0];
+                popup_aaa998646c47012c9fb188556fcd4c13.setContent(html_ad7d4114a76389100004cd9e3641dfdb);
+            
+        
+
+        marker_c50ad01f80293ca429f63a3a5da25eab.bindPopup(popup_aaa998646c47012c9fb188556fcd4c13)
+        ;
+
+        
+    
+    
+            var marker_c452d2e61777224f4bdbe5936ad80beb = L.marker(
+                [-22.9519, -43.2105],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_23effa6ec8f2188e8c77f6840def581b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7ecd71e9dcf81c40638d483282dd340 = $(`<div id="html_e7ecd71e9dcf81c40638d483282dd340" style="width: 100.0%; height: 100.0%;"><b>Christ the Redeemer</b><br>A famous statue in Rio de Janeiro, Brazil.</div>`)[0];
+                popup_23effa6ec8f2188e8c77f6840def581b.setContent(html_e7ecd71e9dcf81c40638d483282dd340);
+            
+        
+
+        marker_c452d2e61777224f4bdbe5936ad80beb.bindPopup(popup_23effa6ec8f2188e8c77f6840def581b)
+        ;
+
+        
+    
+    
+            var marker_ef6a95982a66972f92021a10b56480ef = L.marker(
+                [30.3285, 35.4444],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_1bc7da4fd5b0a86041c90e8f66d2d1f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31342338c8016d2e993bf020542062e3 = $(`<div id="html_31342338c8016d2e993bf020542062e3" style="width: 100.0%; height: 100.0%;"><b>Petra</b><br>An archaeological site in Jordan.</div>`)[0];
+                popup_1bc7da4fd5b0a86041c90e8f66d2d1f3.setContent(html_31342338c8016d2e993bf020542062e3);
+            
+        
+
+        marker_ef6a95982a66972f92021a10b56480ef.bindPopup(popup_1bc7da4fd5b0a86041c90e8f66d2d1f3)
+        ;
+
+        
+    
+    
+            var marker_a2af51b501fae9b1f075a89e8226510b = L.marker(
+                [51.4968, -115.9281],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_f0c25630f2a7cb94829df08a4de6bfd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a0b1e912050839d04961109c6b91437 = $(`<div id="html_0a0b1e912050839d04961109c6b91437" style="width: 100.0%; height: 100.0%;"><b>Banff National Park</b><br>A stunning park in Canada known for its Rocky Mountains.</div>`)[0];
+                popup_f0c25630f2a7cb94829df08a4de6bfd8.setContent(html_0a0b1e912050839d04961109c6b91437);
+            
+        
+
+        marker_a2af51b501fae9b1f075a89e8226510b.bindPopup(popup_f0c25630f2a7cb94829df08a4de6bfd8)
+        ;
+
+        
+    
+    
+            var marker_0dc57bcae29e7f4af9a739ac60e7fbd6 = L.marker(
+                [36.3932, 25.4615],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_ca8829ec0fc929765b63c1be18a5c9a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ea22ac400b4a86f9d9cb5fc5f367056 = $(`<div id="html_7ea22ac400b4a86f9d9cb5fc5f367056" style="width: 100.0%; height: 100.0%;"><b>Santorini</b><br>A beautiful island in Greece with iconic white and blue architecture.</div>`)[0];
+                popup_ca8829ec0fc929765b63c1be18a5c9a4.setContent(html_7ea22ac400b4a86f9d9cb5fc5f367056);
+            
+        
+
+        marker_0dc57bcae29e7f4af9a739ac60e7fbd6.bindPopup(popup_ca8829ec0fc929765b63c1be18a5c9a4)
+        ;
+
+        
+    
+    
+            var marker_0be87bdf5f19eb79c4791a66110b2c4f = L.marker(
+                [36.1069, -112.1129],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_0cbed103feee9f42b822f87216285355 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8bd4986a3a60749285f73fc464eebe3 = $(`<div id="html_c8bd4986a3a60749285f73fc464eebe3" style="width: 100.0%; height: 100.0%;"><b>Grand Canyon</b><br>A natural wonder in the USA.</div>`)[0];
+                popup_0cbed103feee9f42b822f87216285355.setContent(html_c8bd4986a3a60749285f73fc464eebe3);
+            
+        
+
+        marker_0be87bdf5f19eb79c4791a66110b2c4f.bindPopup(popup_0cbed103feee9f42b822f87216285355)
+        ;
+
+        
+    
+    
+            var marker_09b260f8dda51f97c8788bd2df9042a5 = L.marker(
+                [-0.9538, -89.6104],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_6770f6362d40a7f71f7a859fb5c2260f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e86dc49ab9a46ea2a7a3f0f2debbf57f = $(`<div id="html_e86dc49ab9a46ea2a7a3f0f2debbf57f" style="width: 100.0%; height: 100.0%;"><b>Galápagos Islands</b><br>An archipelago in Ecuador known for unique wildlife.</div>`)[0];
+                popup_6770f6362d40a7f71f7a859fb5c2260f.setContent(html_e86dc49ab9a46ea2a7a3f0f2debbf57f);
+            
+        
+
+        marker_09b260f8dda51f97c8788bd2df9042a5.bindPopup(popup_6770f6362d40a7f71f7a859fb5c2260f)
+        ;
+
+        
+    
+    
+            var marker_f7c789f2389d5d16e997d615765a00c4 = L.marker(
+                [-25.3444, 131.0369],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_a5446b84def85b73a0f3a46e4de849a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b40859ce31d0019cc50b63ae2ec6ebdc = $(`<div id="html_b40859ce31d0019cc50b63ae2ec6ebdc" style="width: 100.0%; height: 100.0%;"><b>Uluru</b><br>A massive sandstone monolith in Australia.</div>`)[0];
+                popup_a5446b84def85b73a0f3a46e4de849a0.setContent(html_b40859ce31d0019cc50b63ae2ec6ebdc);
+            
+        
+
+        marker_f7c789f2389d5d16e997d615765a00c4.bindPopup(popup_a5446b84def85b73a0f3a46e4de849a0)
+        ;
+
+        
+    
+    
+            var marker_a61a7901bac0a2847e2569356d62a227 = L.marker(
+                [44.428, -110.5885],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_f13bf244e4b4bd757d2ab6cc93f7c650 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_138f7ff4616e7e240525973481f98687 = $(`<div id="html_138f7ff4616e7e240525973481f98687" style="width: 100.0%; height: 100.0%;"><b>Yellowstone National Park</b><br>The first national park in the USA.</div>`)[0];
+                popup_f13bf244e4b4bd757d2ab6cc93f7c650.setContent(html_138f7ff4616e7e240525973481f98687);
+            
+        
+
+        marker_a61a7901bac0a2847e2569356d62a227.bindPopup(popup_f13bf244e4b4bd757d2ab6cc93f7c650)
+        ;
+
+        
+    
+    
+            var marker_ed032c98085563cbb2bdae5c7726ce7f = L.marker(
+                [47.5576, 10.7498],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_d7c9c2b80efd8cb92e88e3674ef99814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a7585f0487e3fa7638a5290283e5b96 = $(`<div id="html_2a7585f0487e3fa7638a5290283e5b96" style="width: 100.0%; height: 100.0%;"><b>Neuschwanstein Castle</b><br>A fairy-tale castle in Germany.</div>`)[0];
+                popup_d7c9c2b80efd8cb92e88e3674ef99814.setContent(html_2a7585f0487e3fa7638a5290283e5b96);
+            
+        
+
+        marker_ed032c98085563cbb2bdae5c7726ce7f.bindPopup(popup_d7c9c2b80efd8cb92e88e3674ef99814)
+        ;
+
+        
+    
+    
+            var marker_8d83e2cd38eb530bb6492689ecf86b25 = L.marker(
+                [37.1761, -3.5881],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_03084cad89cdaa9c1ab0621a0f7d979f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f8b2c3552544f5069557dbf05afb38b = $(`<div id="html_3f8b2c3552544f5069557dbf05afb38b" style="width: 100.0%; height: 100.0%;"><b>Alhambra</b><br>A palace and fortress complex in Spain.</div>`)[0];
+                popup_03084cad89cdaa9c1ab0621a0f7d979f.setContent(html_3f8b2c3552544f5069557dbf05afb38b);
+            
+        
+
+        marker_8d83e2cd38eb530bb6492689ecf86b25.bindPopup(popup_03084cad89cdaa9c1ab0621a0f7d979f)
+        ;
+
+        
+    
+    
+            var marker_a43e1f5fbfa7fcb5a24bdd8f7e02e66a = L.marker(
+                [51.5081, -0.0759],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_df467fa8bc38cb5c022d0618bc7399fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d74fbfbf225d465fae3c056f9c99da64 = $(`<div id="html_d74fbfbf225d465fae3c056f9c99da64" style="width: 100.0%; height: 100.0%;"><b>Tower of London</b><br>A historic castle on the River Thames in England.</div>`)[0];
+                popup_df467fa8bc38cb5c022d0618bc7399fc.setContent(html_d74fbfbf225d465fae3c056f9c99da64);
+            
+        
+
+        marker_a43e1f5fbfa7fcb5a24bdd8f7e02e66a.bindPopup(popup_df467fa8bc38cb5c022d0618bc7399fc)
+        ;
+
+        
+    
+    
+            var marker_d2dc9ea904a0a89bb003155017e624e2 = L.marker(
+                [20.6843, -88.5678],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_00fb86ae5cd30d1492d72f83293e804c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_767ba8feff5e60be0cb1f554d1a44412 = $(`<div id="html_767ba8feff5e60be0cb1f554d1a44412" style="width: 100.0%; height: 100.0%;"><b>Chichén Itzá</b><br>A large Mayan archaeological site in Mexico.</div>`)[0];
+                popup_00fb86ae5cd30d1492d72f83293e804c.setContent(html_767ba8feff5e60be0cb1f554d1a44412);
+            
+        
+
+        marker_d2dc9ea904a0a89bb003155017e624e2.bindPopup(popup_00fb86ae5cd30d1492d72f83293e804c)
+        ;
+
+        
+    
+    
+            var marker_deda00d395c762bf24eed627b872e951 = L.marker(
+                [-17.9243, 25.8572],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_7a1a1d132068f7d6b9dec983eb4bc27e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96f4b395dac97a54fc7091f1ef2a9020 = $(`<div id="html_96f4b395dac97a54fc7091f1ef2a9020" style="width: 100.0%; height: 100.0%;"><b>Victoria Falls</b><br>One of the largest waterfalls, located on the Zambia-Zimbabwe border.</div>`)[0];
+                popup_7a1a1d132068f7d6b9dec983eb4bc27e.setContent(html_96f4b395dac97a54fc7091f1ef2a9020);
+            
+        
+
+        marker_deda00d395c762bf24eed627b872e951.bindPopup(popup_7a1a1d132068f7d6b9dec983eb4bc27e)
+        ;
+
+        
+    
+    
+            var marker_37291cdad4d3c57dec6ea288eb026232 = L.marker(
+                [48.8606, 2.3376],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_8b23d453acd9a5e9404d9b42337c858f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef55d8adee4f05a56e3aa955d56683ca = $(`<div id="html_ef55d8adee4f05a56e3aa955d56683ca" style="width: 100.0%; height: 100.0%;"><b>Louvre Museum</b><br>The world's largest art museum in Paris, France.</div>`)[0];
+                popup_8b23d453acd9a5e9404d9b42337c858f.setContent(html_ef55d8adee4f05a56e3aa955d56683ca);
+            
+        
+
+        marker_37291cdad4d3c57dec6ea288eb026232.bindPopup(popup_8b23d453acd9a5e9404d9b42337c858f)
+        ;
+
+        
+    
+    
+            var marker_3c5556bfe398ef07be7c3e7b63254e3f = L.marker(
+                [20.9101, 107.1839],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_dff67f193b16e72db320c77faf01d68b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e3f0ba07d9aa06abd57c06a5f1519ff = $(`<div id="html_8e3f0ba07d9aa06abd57c06a5f1519ff" style="width: 100.0%; height: 100.0%;"><b>Ha Long Bay</b><br>A bay in Vietnam known for emerald waters and limestone islands.</div>`)[0];
+                popup_dff67f193b16e72db320c77faf01d68b.setContent(html_8e3f0ba07d9aa06abd57c06a5f1519ff);
+            
+        
+
+        marker_3c5556bfe398ef07be7c3e7b63254e3f.bindPopup(popup_dff67f193b16e72db320c77faf01d68b)
+        ;
+
+        
+    
+    
+            var marker_e98b8abe0baf3d2da487808d01637584 = L.marker(
+                [37.9715, 23.7257],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_2d58c5239f54a856b83054c74e05c6ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d451a43c64a968eac4bff410a7f63bca = $(`<div id="html_d451a43c64a968eac4bff410a7f63bca" style="width: 100.0%; height: 100.0%;"><b>Acropolis of Athens</b><br>An ancient citadel in Greece.</div>`)[0];
+                popup_2d58c5239f54a856b83054c74e05c6ae.setContent(html_d451a43c64a968eac4bff410a7f63bca);
+            
+        
+
+        marker_e98b8abe0baf3d2da487808d01637584.bindPopup(popup_2d58c5239f54a856b83054c74e05c6ae)
+        ;
+
+        
+    
+    
+            var marker_a149e3125857f1acdcf2ceb68d675e69 = L.marker(
+                [-3.0674, 37.3556],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_759e6785f69372333010027452bd9f98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f259fc4bf542bdaafab59064a2981554 = $(`<div id="html_f259fc4bf542bdaafab59064a2981554" style="width: 100.0%; height: 100.0%;"><b>Mount Kilimanjaro</b><br>The highest mountain in Africa.</div>`)[0];
+                popup_759e6785f69372333010027452bd9f98.setContent(html_f259fc4bf542bdaafab59064a2981554);
+            
+        
+
+        marker_a149e3125857f1acdcf2ceb68d675e69.bindPopup(popup_759e6785f69372333010027452bd9f98)
+        ;
+
+        
+    
+    
+            var marker_2ee3e70e16e8c3cfbf6eafb7f626066d = L.marker(
+                [29.9792, 31.1342],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_ef3ec081727306ae2ad0787d206fea59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d7151a095b46b648d90287e1ae25af = $(`<div id="html_c1d7151a095b46b648d90287e1ae25af" style="width: 100.0%; height: 100.0%;"><b>Giza Pyramids</b><br>The ancient pyramids of Egypt.</div>`)[0];
+                popup_ef3ec081727306ae2ad0787d206fea59.setContent(html_c1d7151a095b46b648d90287e1ae25af);
+            
+        
+
+        marker_2ee3e70e16e8c3cfbf6eafb7f626066d.bindPopup(popup_ef3ec081727306ae2ad0787d206fea59)
+        ;
+
+        
+    
+    
+            var marker_1136d49343ef9194b568725c7b52bb26 = L.marker(
+                [43.8791, -103.4591],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_ef47468d5c039df763e8b92a3e8f3dda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3df2c6d898f20a62d2d9033ed218c67c = $(`<div id="html_3df2c6d898f20a62d2d9033ed218c67c" style="width: 100.0%; height: 100.0%;"><b>Mount Rushmore</b><br>A monumental granite sculpture in South Dakota, USA.</div>`)[0];
+                popup_ef47468d5c039df763e8b92a3e8f3dda.setContent(html_3df2c6d898f20a62d2d9033ed218c67c);
+            
+        
+
+        marker_1136d49343ef9194b568725c7b52bb26.bindPopup(popup_ef47468d5c039df763e8b92a3e8f3dda)
+        ;
+
+        
+    
+    
+            var marker_6ca4439a18c421909ddaf9180e0f8864 = L.marker(
+                [41.4036, 2.1744],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_a032455a06b484c5626ded36ae36b6cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d094d8e0629f81ba57cb097974d73663 = $(`<div id="html_d094d8e0629f81ba57cb097974d73663" style="width: 100.0%; height: 100.0%;"><b>Sagrada Familia</b><br>A Roman Catholic basilica in Barcelona, Spain.</div>`)[0];
+                popup_a032455a06b484c5626ded36ae36b6cf.setContent(html_d094d8e0629f81ba57cb097974d73663);
+            
+        
+
+        marker_6ca4439a18c421909ddaf9180e0f8864.bindPopup(popup_a032455a06b484c5626ded36ae36b6cf)
+        ;
+
+        
+    
+    
+            var marker_0585e10420bcc659883a21396a90a5b0 = L.marker(
+                [48.8049, 2.1204],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_1d6c6739698ccafb401730f5277cb356 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c97f15ea97cf75528509bb9b03a6eb90 = $(`<div id="html_c97f15ea97cf75528509bb9b03a6eb90" style="width: 100.0%; height: 100.0%;"><b>Versailles Palace</b><br>A former royal residence in France.</div>`)[0];
+                popup_1d6c6739698ccafb401730f5277cb356.setContent(html_c97f15ea97cf75528509bb9b03a6eb90);
+            
+        
+
+        marker_0585e10420bcc659883a21396a90a5b0.bindPopup(popup_1d6c6739698ccafb401730f5277cb356)
+        ;
+
+        
+    
+    
+            var marker_8daaf845db87acd490d86037b3e7caa0 = L.marker(
+                [29.9753, 31.1325],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_ef886dbb5853c25ffc1d75a2a8815988 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a453ce7f64ede9486525173fd37cd8 = $(`<div id="html_16a453ce7f64ede9486525173fd37cd8" style="width: 100.0%; height: 100.0%;"><b>Giza Necropolis</b><br>An ancient burial ground in Egypt.</div>`)[0];
+                popup_ef886dbb5853c25ffc1d75a2a8815988.setContent(html_16a453ce7f64ede9486525173fd37cd8);
+            
+        
+
+        marker_8daaf845db87acd490d86037b3e7caa0.bindPopup(popup_ef886dbb5853c25ffc1d75a2a8815988)
+        ;
+
+        
+    
+    
+            var marker_e7fd6a3cff6276bd508b8d271241c596 = L.marker(
+                [48.8606, 2.3376],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_a8881d7aea467f28ef46f32bb25d6881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f077dc213354593acaef5a85aaaa7004 = $(`<div id="html_f077dc213354593acaef5a85aaaa7004" style="width: 100.0%; height: 100.0%;"><b>The Louvre</b><br>A world-famous museum located in Paris, France.</div>`)[0];
+                popup_a8881d7aea467f28ef46f32bb25d6881.setContent(html_f077dc213354593acaef5a85aaaa7004);
+            
+        
+
+        marker_e7fd6a3cff6276bd508b8d271241c596.bindPopup(popup_a8881d7aea467f28ef46f32bb25d6881)
+        ;
+
+        
+    
+    
+            var marker_9f2a310b165db4be3fe3b1465a491c62 = L.marker(
+                [-27.1127, -109.3497],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_7252a657c47c21a9e327f17c167c386c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de20c081a843477d37bcd87cc8eec72c = $(`<div id="html_de20c081a843477d37bcd87cc8eec72c" style="width: 100.0%; height: 100.0%;"><b>Moai Statues of Easter Island</b><br>Ancient stone statues located on Easter Island.</div>`)[0];
+                popup_7252a657c47c21a9e327f17c167c386c.setContent(html_de20c081a843477d37bcd87cc8eec72c);
+            
+        
+
+        marker_9f2a310b165db4be3fe3b1465a491c62.bindPopup(popup_7252a657c47c21a9e327f17c167c386c)
+        ;
+
+        
+    
+    
+            var marker_3a32ae446ba879a4281c38f0345c106c = L.marker(
+                [50.0359, 19.1783],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_97550eee05b90e608f062f682eabfed0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_662425b19f397e6eb7546796a056235a = $(`<div id="html_662425b19f397e6eb7546796a056235a" style="width: 100.0%; height: 100.0%;"><b>Auschwitz Concentration Camp</b><br>A site of historical significance in Poland.</div>`)[0];
+                popup_97550eee05b90e608f062f682eabfed0.setContent(html_662425b19f397e6eb7546796a056235a);
+            
+        
+
+        marker_3a32ae446ba879a4281c38f0345c106c.bindPopup(popup_97550eee05b90e608f062f682eabfed0)
+        ;
+
+        
+    
+    
+            var marker_6c9a81273e5420145113d00002a06b1e = L.marker(
+                [52.5163, 13.3777],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_6f7d4415d143d0e6f8019bcd22884043 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_952ea3d3da6f42350d9d1b9b24a59b04 = $(`<div id="html_952ea3d3da6f42350d9d1b9b24a59b04" style="width: 100.0%; height: 100.0%;"><b>Berlin Wall</b><br>A historical landmark in Germany.</div>`)[0];
+                popup_6f7d4415d143d0e6f8019bcd22884043.setContent(html_952ea3d3da6f42350d9d1b9b24a59b04);
+            
+        
+
+        marker_6c9a81273e5420145113d00002a06b1e.bindPopup(popup_6f7d4415d143d0e6f8019bcd22884043)
+        ;
+
+        
+    
+    
+            var marker_71cb6fa69b2671ef87ac3a17a75cf50c = L.marker(
+                [48.8049, 2.1204],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_d0a84f35ed0cd38602ce7d79cccb4448 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e7897ba382f98bef0ecbd88091aafb2 = $(`<div id="html_7e7897ba382f98bef0ecbd88091aafb2" style="width: 100.0%; height: 100.0%;"><b>Palace of Versailles</b><br>A former royal residence in France.</div>`)[0];
+                popup_d0a84f35ed0cd38602ce7d79cccb4448.setContent(html_7e7897ba382f98bef0ecbd88091aafb2);
+            
+        
+
+        marker_71cb6fa69b2671ef87ac3a17a75cf50c.bindPopup(popup_d0a84f35ed0cd38602ce7d79cccb4448)
+        ;
+
+        
+    
+    
+            var marker_6413f6003a6df13cb52ad065eb54ce13 = L.marker(
+                [16.7843, 96.1595],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_e27958421c0bfe8175077908be435c0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7b5db8d6e6c6bacca535743e8ede04b = $(`<div id="html_c7b5db8d6e6c6bacca535743e8ede04b" style="width: 100.0%; height: 100.0%;"><b>Shwedagon Pagoda</b><br>A famous pagoda in Myanmar.</div>`)[0];
+                popup_e27958421c0bfe8175077908be435c0c.setContent(html_c7b5db8d6e6c6bacca535743e8ede04b);
+            
+        
+
+        marker_6413f6003a6df13cb52ad065eb54ce13.bindPopup(popup_e27958421c0bfe8175077908be435c0c)
+        ;
+
+        
+    
+    
+            var marker_4589c4cc4fec306b27d7e5ad68206eea = L.marker(
+                [37.751, 15.0047],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_30389826b4de11457af4dd3f9da8fd91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d54c96d1c34023ebe80c1ade515ae64a = $(`<div id="html_d54c96d1c34023ebe80c1ade515ae64a" style="width: 100.0%; height: 100.0%;"><b>Mount Etna</b><br>A highly active volcano in Sicily, Italy.</div>`)[0];
+                popup_30389826b4de11457af4dd3f9da8fd91.setContent(html_d54c96d1c34023ebe80c1ade515ae64a);
+            
+        
+
+        marker_4589c4cc4fec306b27d7e5ad68206eea.bindPopup(popup_30389826b4de11457af4dd3f9da8fd91)
+        ;
+
+        
+    
+    
+            var marker_fc96ffde3c4a55aff4853c8afc09c83d = L.marker(
+                [40.7487, 14.4847],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_d7bf14863570ea14f865295d77d34bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ac0480fa83fad2e50827c06c647d253 = $(`<div id="html_2ac0480fa83fad2e50827c06c647d253" style="width: 100.0%; height: 100.0%;"><b>Pompeii</b><br>An ancient city preserved by volcanic ash in Italy.</div>`)[0];
+                popup_d7bf14863570ea14f865295d77d34bc0.setContent(html_2ac0480fa83fad2e50827c06c647d253);
+            
+        
+
+        marker_fc96ffde3c4a55aff4853c8afc09c83d.bindPopup(popup_d7bf14863570ea14f865295d77d34bc0)
+        ;
+
+        
+    
+    
+            var marker_ba8fe9d4c99500011231144fe1354595 = L.marker(
+                [-25.6953, -54.4367],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_c14c930a08a602c698b7117bae41064a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_028793d5835201995313f6f7cc5bbdcf = $(`<div id="html_028793d5835201995313f6f7cc5bbdcf" style="width: 100.0%; height: 100.0%;"><b>Iguazu Falls</b><br>A massive waterfall system in South America.</div>`)[0];
+                popup_c14c930a08a602c698b7117bae41064a.setContent(html_028793d5835201995313f6f7cc5bbdcf);
+            
+        
+
+        marker_ba8fe9d4c99500011231144fe1354595.bindPopup(popup_c14c930a08a602c698b7117bae41064a)
+        ;
+
+        
+    
+    
+            var marker_dee8221ee12589337a4c11ecb95e9155 = L.marker(
+                [41.0053, 28.976],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_b1b9df7f7dda1843000b4c0fb69f89ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce808aeeca97344960d67dc04392351e = $(`<div id="html_ce808aeeca97344960d67dc04392351e" style="width: 100.0%; height: 100.0%;"><b>Sultan Ahmed Mosque</b><br>A historic mosque in Istanbul, Turkey.</div>`)[0];
+                popup_b1b9df7f7dda1843000b4c0fb69f89ba.setContent(html_ce808aeeca97344960d67dc04392351e);
+            
+        
+
+        marker_dee8221ee12589337a4c11ecb95e9155.bindPopup(popup_b1b9df7f7dda1843000b4c0fb69f89ba)
+        ;
+
+        
+    
+    
+            var marker_0e389327373446b8529a6defd05db371 = L.marker(
+                [51.276, 30.2211],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_06ce01782b899dbc61285b7759aa5a43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3090ea05c172c94e9447df9675d24be = $(`<div id="html_a3090ea05c172c94e9447df9675d24be" style="width: 100.0%; height: 100.0%;"><b>Chernobyl Exclusion Zone</b><br>The site of the 1986 nuclear disaster in Ukraine.</div>`)[0];
+                popup_06ce01782b899dbc61285b7759aa5a43.setContent(html_a3090ea05c172c94e9447df9675d24be);
+            
+        
+
+        marker_0e389327373446b8529a6defd05db371.bindPopup(popup_06ce01782b899dbc61285b7759aa5a43)
+        ;
+
+        
+    
+    
+            var marker_fb7c185ce3955a4a783ba88d2dd1a528 = L.marker(
+                [55.7558, 37.6176],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_c68da0ff6746f2406d7fbfef63f1acfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07a5f5c47d386e1650e14b295733958e = $(`<div id="html_07a5f5c47d386e1650e14b295733958e" style="width: 100.0%; height: 100.0%;"><b>Kremlin</b><br>A fortified complex in Moscow, Russia.</div>`)[0];
+                popup_c68da0ff6746f2406d7fbfef63f1acfb.setContent(html_07a5f5c47d386e1650e14b295733958e);
+            
+        
+
+        marker_fb7c185ce3955a4a783ba88d2dd1a528.bindPopup(popup_c68da0ff6746f2406d7fbfef63f1acfb)
+        ;
+
+        
+    
+    
+            var marker_0186c6316f87e188855b90ba1aa95769 = L.marker(
+                [28.6562, 77.241],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_881362d8985a7720fcbe9f29809e4325 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7372cb376943ad7048f3c1557c03a314 = $(`<div id="html_7372cb376943ad7048f3c1557c03a314" style="width: 100.0%; height: 100.0%;"><b>Red Fort</b><br>A historic fort in Delhi, India.</div>`)[0];
+                popup_881362d8985a7720fcbe9f29809e4325.setContent(html_7372cb376943ad7048f3c1557c03a314);
+            
+        
+
+        marker_0186c6316f87e188855b90ba1aa95769.bindPopup(popup_881362d8985a7720fcbe9f29809e4325)
+        ;
+
+        
+    
+    
+            var marker_1fc5815bb8c3395b5a92e96bcbd2ca4f = L.marker(
+                [28.5244, 77.1855],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_5aa2dfbd6682a0a9dfb739ccb67f6f85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e2734d502292c7f4bd7266fe019362 = $(`<div id="html_04e2734d502292c7f4bd7266fe019362" style="width: 100.0%; height: 100.0%;"><b>Qutub Minar</b><br>A towering minaret in Delhi, India.</div>`)[0];
+                popup_5aa2dfbd6682a0a9dfb739ccb67f6f85.setContent(html_04e2734d502292c7f4bd7266fe019362);
+            
+        
+
+        marker_1fc5815bb8c3395b5a92e96bcbd2ca4f.bindPopup(popup_5aa2dfbd6682a0a9dfb739ccb67f6f85)
+        ;
+
+        
+    
+    
+            var marker_08b3279a28192445c165e2feec3919fc = L.marker(
+                [24.6955, 84.9915],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_6916b7020ad8eb2e2e96000e9ac68c10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cff7419d1c35476f09820594f680bcec = $(`<div id="html_cff7419d1c35476f09820594f680bcec" style="width: 100.0%; height: 100.0%;"><b>Bodh Gaya</b><br>The site of Buddha's enlightenment in Bihar, India.</div>`)[0];
+                popup_6916b7020ad8eb2e2e96000e9ac68c10.setContent(html_cff7419d1c35476f09820594f680bcec);
+            
+        
+
+        marker_08b3279a28192445c165e2feec3919fc.bindPopup(popup_6916b7020ad8eb2e2e96000e9ac68c10)
+        ;
+
+        
+    
+    
+            var marker_293bb4b0854f58feecdff5001dcd5eff = L.marker(
+                [27.1, 77.6755],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_a5ba8bc992a27806fd1a2cf704387328 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8425cf5ea119553715e0dc3891955f9 = $(`<div id="html_e8425cf5ea119553715e0dc3891955f9" style="width: 100.0%; height: 100.0%;"><b>Fatehpur Sikri</b><br>A city built by the Mughal emperor Akbar in India.</div>`)[0];
+                popup_a5ba8bc992a27806fd1a2cf704387328.setContent(html_e8425cf5ea119553715e0dc3891955f9);
+            
+        
+
+        marker_293bb4b0854f58feecdff5001dcd5eff.bindPopup(popup_a5ba8bc992a27806fd1a2cf704387328)
+        ;
+
+        
+    
+    
+            var marker_894fd69427cc1d8e44b016cce1c4dfb7 = L.marker(
+                [28.5922, 77.25],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_cce7e92c1035a014c449c49d94a79218 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d350254c0017473320283321b7151818 = $(`<div id="html_d350254c0017473320283321b7151818" style="width: 100.0%; height: 100.0%;"><b>Humayun's Tomb</b><br>The tomb of the Mughal emperor Humayun in Delhi, India.</div>`)[0];
+                popup_cce7e92c1035a014c449c49d94a79218.setContent(html_d350254c0017473320283321b7151818);
+            
+        
+
+        marker_894fd69427cc1d8e44b016cce1c4dfb7.bindPopup(popup_cce7e92c1035a014c449c49d94a79218)
+        ;
+
+        
+    
+    
+            var marker_e42ff2a5722f5aeccd4431f175a4ac95 = L.marker(
+                [24.8473, 79.9195],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_08b3cf4b4af08d97626ec1d50114fd79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d36cf54f8c2ca0152eb327f906ef526 = $(`<div id="html_2d36cf54f8c2ca0152eb327f906ef526" style="width: 100.0%; height: 100.0%;"><b>Khajuraho Temples</b><br>Famous for their intricate erotic sculptures in Madhya Pradesh, India.</div>`)[0];
+                popup_08b3cf4b4af08d97626ec1d50114fd79.setContent(html_2d36cf54f8c2ca0152eb327f906ef526);
+            
+        
+
+        marker_e42ff2a5722f5aeccd4431f175a4ac95.bindPopup(popup_08b3cf4b4af08d97626ec1d50114fd79)
+        ;
+
+        
+    
+    
+            var marker_1c6bc2da0a06b4c1a8daa40495b39bad = L.marker(
+                [23.4902, 77.749],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_4c0347eae7e4773ec2faa1e3583c397f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66837568e1b83ab7cdec86cea59c69dd = $(`<div id="html_66837568e1b83ab7cdec86cea59c69dd" style="width: 100.0%; height: 100.0%;"><b>Sanchi Stupa</b><br>A Buddhist complex in Madhya Pradesh, India.</div>`)[0];
+                popup_4c0347eae7e4773ec2faa1e3583c397f.setContent(html_66837568e1b83ab7cdec86cea59c69dd);
+            
+        
+
+        marker_1c6bc2da0a06b4c1a8daa40495b39bad.bindPopup(popup_4c0347eae7e4773ec2faa1e3583c397f)
+        ;
+
+        
+    
+    
+            var marker_8b8eea859e86969b7d9f86d61dc632b6 = L.marker(
+                [18.9275, 72.9286],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_1cd4a6a3f5e8aba91036afe7cf05c367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbfc0b3aa64fe4a5233e7d4e0d9336a3 = $(`<div id="html_cbfc0b3aa64fe4a5233e7d4e0d9336a3" style="width: 100.0%; height: 100.0%;"><b>Elephanta Caves</b><br>Ancient rock-cut temples on Elephanta Island in Mumbai, India.</div>`)[0];
+                popup_1cd4a6a3f5e8aba91036afe7cf05c367.setContent(html_cbfc0b3aa64fe4a5233e7d4e0d9336a3);
+            
+        
+
+        marker_8b8eea859e86969b7d9f86d61dc632b6.bindPopup(popup_1cd4a6a3f5e8aba91036afe7cf05c367)
+        ;
+
+        
+    
+    
+            var marker_92fceb515d03ac2109c4c2fa576df115 = L.marker(
+                [20.5292, 75.7069],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_89ab059b8df8faa05be2de8cfcab3369 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1608372480ecf2ca5e705979058cbc4e = $(`<div id="html_1608372480ecf2ca5e705979058cbc4e" style="width: 100.0%; height: 100.0%;"><b>Ajanta and Ellora Caves</b><br>Buddhist rock-cut cave complexes in Maharashtra, India.</div>`)[0];
+                popup_89ab059b8df8faa05be2de8cfcab3369.setContent(html_1608372480ecf2ca5e705979058cbc4e);
+            
+        
+
+        marker_92fceb515d03ac2109c4c2fa576df115.bindPopup(popup_89ab059b8df8faa05be2de8cfcab3369)
+        ;
+
+        
+    
+    
+            var marker_1507309bc895b5aabe9c1652a9f8519a = L.marker(
+                [25.29, 91.5863],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_33c6f0c2db220194f48004db315a7546 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bd5703f4c22050b82dd073f8a42b827 = $(`<div id="html_3bd5703f4c22050b82dd073f8a42b827" style="width: 100.0%; height: 100.0%;"><b>Meghalaya Living Root Bridges</b><br>Unique natural bridges formed by the roots of trees in Meghalaya, India.</div>`)[0];
+                popup_33c6f0c2db220194f48004db315a7546.setContent(html_3bd5703f4c22050b82dd073f8a42b827);
+            
+        
+
+        marker_1507309bc895b5aabe9c1652a9f8519a.bindPopup(popup_33c6f0c2db220194f48004db315a7546)
+        ;
+
+        
+    
+    
+            var marker_d0c71d6523bcaf4a4d4cab35aefdbb7a = L.marker(
+                [26.9196, 75.826],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_d8c9af692b346db3ca9ef57ad193c652 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41f115684253dc52c448660eab632d5d = $(`<div id="html_41f115684253dc52c448660eab632d5d" style="width: 100.0%; height: 100.0%;"><b>Jantar Mantar</b><br>An astronomical observatory in Jaipur, India.</div>`)[0];
+                popup_d8c9af692b346db3ca9ef57ad193c652.setContent(html_41f115684253dc52c448660eab632d5d);
+            
+        
+
+        marker_d0c71d6523bcaf4a4d4cab35aefdbb7a.bindPopup(popup_d8c9af692b346db3ca9ef57ad193c652)
+        ;
+
+        
+    
+    
+            var marker_1935fe49375c711f2d82491e6118d1d3 = L.marker(
+                [23.8528, 72.1333],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_c5ad925da1335a792b84dea2b46452e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcc1023dee894181d22641fe5c2cce3f = $(`<div id="html_fcc1023dee894181d22641fe5c2cce3f" style="width: 100.0%; height: 100.0%;"><b>Rani-ki-Vav</b><br>A stepwell in Patan, Gujarat, India.</div>`)[0];
+                popup_c5ad925da1335a792b84dea2b46452e3.setContent(html_fcc1023dee894181d22641fe5c2cce3f);
+            
+        
+
+        marker_1935fe49375c711f2d82491e6118d1d3.bindPopup(popup_c5ad925da1335a792b84dea2b46452e3)
+        ;
+
+        
+    
+    
+            var marker_d593d808920dad4f633604d4bc7d6d3b = L.marker(
+                [21.9494, 88.1692],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_9920d9e9e86453c6799593fed82276d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77a2403d8816f7d5f28c0bb2686bd88d = $(`<div id="html_77a2403d8816f7d5f28c0bb2686bd88d" style="width: 100.0%; height: 100.0%;"><b>Sundarbans Mangrove Forests</b><br>The world's largest tidal halophytic mangrove forest in West Bengal, India.</div>`)[0];
+                popup_9920d9e9e86453c6799593fed82276d1.setContent(html_77a2403d8816f7d5f28c0bb2686bd88d);
+            
+        
+
+        marker_d593d808920dad4f633604d4bc7d6d3b.bindPopup(popup_9920d9e9e86453c6799593fed82276d1)
+        ;
+
+        
+    
+    
+            var marker_da3a24d4c1926b5d19ba2376f99a49c6 = L.marker(
+                [26.6525, 93.17],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_f25effbea32daa0917d92ea14e546e15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_878ebfa8d14cde5cdbd9f4075997a8fd = $(`<div id="html_878ebfa8d14cde5cdbd9f4075997a8fd" style="width: 100.0%; height: 100.0%;"><b>Kaziranga National Park</b><br>A UNESCO World Heritage Site and home to the Indian one-horned rhinoceros.</div>`)[0];
+                popup_f25effbea32daa0917d92ea14e546e15.setContent(html_878ebfa8d14cde5cdbd9f4075997a8fd);
+            
+        
+
+        marker_da3a24d4c1926b5d19ba2376f99a49c6.bindPopup(popup_f25effbea32daa0917d92ea14e546e15)
+        ;
+
+        
+    
+    
+            var marker_cd6e370054525ff3354dcf55b73d4548 = L.marker(
+                [10.7869, 79.1316],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_7d045f9c84ebd0f858461cc3437951b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b7f71e0767b49705e4b1544cf867a08 = $(`<div id="html_2b7f71e0767b49705e4b1544cf867a08" style="width: 100.0%; height: 100.0%;"><b>Brihadeeswarar Temple</b><br>A grand temple in Thanjavur, Tamil Nadu, India.</div>`)[0];
+                popup_7d045f9c84ebd0f858461cc3437951b4.setContent(html_2b7f71e0767b49705e4b1544cf867a08);
+            
+        
+
+        marker_cd6e370054525ff3354dcf55b73d4548.bindPopup(popup_7d045f9c84ebd0f858461cc3437951b4)
+        ;
+
+        
+    
+    
+            var marker_9811bd550535207b2564159bbff0fc6a = L.marker(
+                [22.6948, 77.4377],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_24c948d0b78b39da6a7597250f2eb222 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad9ac7537d429bad8938916b11d21d53 = $(`<div id="html_ad9ac7537d429bad8938916b11d21d53" style="width: 100.0%; height: 100.0%;"><b>Rock Shelters of Bhimbetka</b><br>Caves in Madhya Pradesh with prehistoric rock paintings.</div>`)[0];
+                popup_24c948d0b78b39da6a7597250f2eb222.setContent(html_ad9ac7537d429bad8938916b11d21d53);
+            
+        
+
+        marker_9811bd550535207b2564159bbff0fc6a.bindPopup(popup_24c948d0b78b39da6a7597250f2eb222)
+        ;
+
+        
+    
+    
+            var marker_9774b2419099023ed97b0509d5f8f221 = L.marker(
+                [55.24, -6.5111],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_4a6642fb12d3162fa2577675f80375cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc8116374ff6cf91ae69b0218f30815 = $(`<div id="html_dbc8116374ff6cf91ae69b0218f30815" style="width: 100.0%; height: 100.0%;"><b>Giant's Causeway</b><br>An area of interlocking basalt columns in Northern Ireland.</div>`)[0];
+                popup_4a6642fb12d3162fa2577675f80375cc.setContent(html_dbc8116374ff6cf91ae69b0218f30815);
+            
+        
+
+        marker_9774b2419099023ed97b0509d5f8f221.bindPopup(popup_4a6642fb12d3162fa2577675f80375cc)
+        ;
+
+        
+    
+    
+            var marker_d84adbd38e5af0005026826ef6d7dfe0 = L.marker(
+                [38.6466, -90.0687],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_d33ba38e54924dd3a89fffa98d09a744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f29aea2c244de09e114b1ba6a231ff8 = $(`<div id="html_5f29aea2c244de09e114b1ba6a231ff8" style="width: 100.0%; height: 100.0%;"><b>Cahokia Mounds</b><br>A pre-Columbian Native American city in Illinois, USA.</div>`)[0];
+                popup_d33ba38e54924dd3a89fffa98d09a744.setContent(html_5f29aea2c244de09e114b1ba6a231ff8);
+            
+        
+
+        marker_d84adbd38e5af0005026826ef6d7dfe0.bindPopup(popup_d33ba38e54924dd3a89fffa98d09a744)
+        ;
+
+        
+    
+    
+            var marker_9b90c59cc2dc5757551041af7debdb32 = L.marker(
+                [-27.1127, -109.3497],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_43e0fbff3f12d5aac16764f9e59ea311 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_647d1624bab6bb86c220ed2e97c3cf92 = $(`<div id="html_647d1624bab6bb86c220ed2e97c3cf92" style="width: 100.0%; height: 100.0%;"><b>Easter Island</b><br>An island in the southeastern Pacific Ocean, known for its Moai statues.</div>`)[0];
+                popup_43e0fbff3f12d5aac16764f9e59ea311.setContent(html_647d1624bab6bb86c220ed2e97c3cf92);
+            
+        
+
+        marker_9b90c59cc2dc5757551041af7debdb32.bindPopup(popup_43e0fbff3f12d5aac16764f9e59ea311)
+        ;
+
+        
+    
+    
+            var marker_095a9355634495a8f668c1e8ad2a4158 = L.marker(
+                [40.8222, 14.4269],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_86216f81a874ba104098c52973268a43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22ff7ccd069bc9c1ec08c1e43406de77 = $(`<div id="html_22ff7ccd069bc9c1ec08c1e43406de77" style="width: 100.0%; height: 100.0%;"><b>Mount Vesuvius</b><br>An active volcano near Naples, Italy.</div>`)[0];
+                popup_86216f81a874ba104098c52973268a43.setContent(html_22ff7ccd069bc9c1ec08c1e43406de77);
+            
+        
+
+        marker_095a9355634495a8f668c1e8ad2a4158.bindPopup(popup_86216f81a874ba104098c52973268a43)
+        ;
+
+        
+    
+    
+            var marker_e55f652e6daad1364396c8a8cbb242e2 = L.marker(
+                [28.5392, 33.9735],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_5ea5a725a40ea92936aef3a92fdde0ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_956b1f9b88dd97dc937807905ff4e75c = $(`<div id="html_956b1f9b88dd97dc937807905ff4e75c" style="width: 100.0%; height: 100.0%;"><b>Mount Sinai</b><br>A mountain in Egypt, traditionally associated with the Biblical Mount Sinai.</div>`)[0];
+                popup_5ea5a725a40ea92936aef3a92fdde0ef.setContent(html_956b1f9b88dd97dc937807905ff4e75c);
+            
+        
+
+        marker_e55f652e6daad1364396c8a8cbb242e2.bindPopup(popup_5ea5a725a40ea92936aef3a92fdde0ef)
+        ;
+
+        
+    
+    
+            var marker_948980ee7e444b4ea4124b242beb3e03 = L.marker(
+                [16.9269, 121.0516],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_816b4829dbe261c1fdeab23b50ac23ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_616d5a273ea98649460d7d77d46ec3a0 = $(`<div id="html_616d5a273ea98649460d7d77d46ec3a0" style="width: 100.0%; height: 100.0%;"><b>Banaue Rice Terraces</b><br>A 2,000-year-old terrace system in the Philippines.</div>`)[0];
+                popup_816b4829dbe261c1fdeab23b50ac23ba.setContent(html_616d5a273ea98649460d7d77d46ec3a0);
+            
+        
+
+        marker_948980ee7e444b4ea4124b242beb3e03.bindPopup(popup_816b4829dbe261c1fdeab23b50ac23ba)
+        ;
+
+        
+    
+    
+            var marker_90c844f630e071357bcf469ac99812b4 = L.marker(
+                [-30.951, -67.6141],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_407d1d4d523a51976e1c64afe91120ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1101a8ca50e0149812827bce640381e7 = $(`<div id="html_1101a8ca50e0149812827bce640381e7" style="width: 100.0%; height: 100.0%;"><b>Ischigualasto Provincial Park</b><br>A fossil-rich park in Argentina.</div>`)[0];
+                popup_407d1d4d523a51976e1c64afe91120ec.setContent(html_1101a8ca50e0149812827bce640381e7);
+            
+        
+
+        marker_90c844f630e071357bcf469ac99812b4.bindPopup(popup_407d1d4d523a51976e1c64afe91120ec)
+        ;
+
+        
+    
+    
+            var marker_3d987657b3054333ac741043eb701269 = L.marker(
+                [10.4634, -84.7037],
+                {}
+            ).addTo(marker_cluster_65696fb6413d279af7ab0d5d291960ea);
+        
+    
+        var popup_f20103b1d114f7143bafabfd810dd804 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92552e6df1497729039a14cc333331d2 = $(`<div id="html_92552e6df1497729039a14cc333331d2" style="width: 100.0%; height: 100.0%;"><b>Arenal Volcano</b><br>An active volcano in Costa Rica.</div>`)[0];
+                popup_f20103b1d114f7143bafabfd810dd804.setContent(html_92552e6df1497729039a14cc333331d2);
+            
+        
+
+        marker_3d987657b3054333ac741043eb701269.bindPopup(popup_f20103b1d114f7143bafabfd810dd804)
+        ;
+
+        
+    
+    
+            marker_cluster_65696fb6413d279af7ab0d5d291960ea.addTo(map_cecf30e4c7e694b0ab56555efa53cb9c);
+        
+</script>
+</html>

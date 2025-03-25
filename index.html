@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to <b>Rahul's Arena</b></h1>
+        <p>I am currently pursuing Btech as a First year student.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">My Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/2.jpg" alt="My Profile" width="200">
+        <p>Hi! I'm <b>Rahul</b>. I love coding, design, cars, reading novels and football .</p>
+    </section>
+
+    <section id="gallery">
+        <h2>My Gallery</h2>
+        <div class="image-container">
+            <img src="images/3.jpg" alt="Me">
+            <img src="images/5.jpg" alt="Me">
+            <img src="images/6.jpg" alt="Me">
+            <img src="images/7.jpg" alt="Me">
+            <img src="images/8.jpg" alt="Me">
+            <img src="images/9.jpg" alt="Mumbai">
+            <img src="images/10.jpg" alt="Mumbai">
+            <img src="images/11.jpg" alt="Mumbai">
+            
+           
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="response"></p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <img src="images/main menu.png" alt="Project 1" width="900">
+                <h3>Agriculture Management System and Analysis</h3>
+                <p>A python app for predicting, analysing market crop prices.The motive of this project is to ease the functioning of 'Agriculture Management System' ie. help in different types of farming such as crop farming,cattle farming,fish farming etc.and analyse the past 1 year record of market prices of crops in local area.</p>
+                <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <img src="images/ui uix ccp.png" alt="Project 2">
+                <h3>A website aim to rediscover and bring our ancient and rich heritage to light in today's time speeding world of technology and internet where our current generation -genz can learn about it interactively. </h3>
+                <p>A short description of your second project.</p>
+                <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project">
+                <img src="images/bgg2.jpg" alt="Project 3">
+                <img src="images/world_heritage_map.jpg" alt="Project 3">
+                <h3>HERITAGE NEXUS APP</h3>
+                <p>An extension based on the idea of the website in the form of an interactive application built using python libraries .</p>
+                <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
